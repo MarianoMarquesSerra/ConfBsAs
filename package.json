@@ -1,0 +1,16 @@
+{
+  "name": "tpintegrador",
+  "version": "1.0.0",
+  "description": "Tp integrador Codo a Codo",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariano Marques Serra",
+  "license": "ISC"
+}

@@ -1,0 +1,123 @@
+$dark: rgb(71, 65, 65);
+$success: rgb(69, 192, 69);
+
+body{
+  font-family: sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+  .ContenedorLogo{
+    display: flex;
+    width: 300px;
+    margin-left: 7%;
+  }
+
+  .Logo{
+    position: relative;
+    display: flex;
+    float: left;
+  }
+  
+  a{
+    font-size: 16px !important;
+  }
+  
+  p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .Cards{
+    display: flex;
+    justify-content: center; 
+  }
+
+  .TituloArticulo{
+    padding-top: 20px;
+  }
+  
+  .Articulo{
+    margin-top: 40px;
+    border-top: 2px solid gray;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .btnEnviar{
+    background-color: rgb(135, 199, 39);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .ContenedorImagenPrincipal{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .Formulario{
+    position: relative;
+    margin: auto;
+    width: 50%;
+  }
+
+  .btn-success{
+      color: white;
+  }
+
+  .py-1 {
+    padding-top: 0.10rem !important;
+    padding-bottom: 0.10rem !important;
+  }
+
+ .carousel-caption {
+  top: 0;
+  bottom: auto;
+}
+
+  textarea::-webkit-input-placeholder {
+    font-size: 100%;
+    padding: 10px;
+  }
+
+.textoCarousel{
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 800px) {
+  .textoCarousel{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .textoCarousel{
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .textoCarousel{
+    top: 0;
+    font-size: 0.6rem;
+  }
+
+  input{
+    margin-bottom: 10px !important;
+  }
+
+  .itemFooter{
+    margin-bottom: 5px !important;
+    padding: 5px !important;
+  }
+}
+
+.Boton{
+  font-size: 10px;
+}
+
+@import "../bootstrap/scss/bootstrap"

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="https://kit.fontawesome.com/e86ab382de.js" crossorigin="anonymous"></script>
+    <title>ConfBsAs</title>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <!-- BARRA NAVEGACIÓN -->
+              <div class="bg-dark">
+                  <nav class="navbar navbar-expand-md navbar-dark bg-dark border-3 border-bottom border-dark">
+                        <div class="container-fluid">
+                          <div class="ContenedorLogo">
+                            <div>
+                                <img class="img-fluid Logo" src="./Images/codoacodo.png" alt="ImagenCodoaCodo" style="width: 100px;">
+                            </div>
+                            <div>
+                                <h5 class="text-white mt-3">Conf Bs As</h5>
+                            </div>
+                          </div>  
+                            <button type="button" class="MenuNavegacion navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-expanded="false">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+      
+                        <div id="MenuNavegacion" class="navbar-collapse collapse">
+                                <ul class="navbar-nav ms-3">
+                                      <li class="navbar-brand mr-0 text-secondary">
+                                          <a class="nav-link" href="./Index.html">La conferencia</a>
+                                      </li>
+                                      <li class="navbar-brand mr-0 text-secondary">
+                                          <a class="nav-link" href="#">Los oradores</a>
+                                      </li>
+                                      <li class="navbar-brand mr-0 text-secondary">
+                                          <a class="nav-link" href="#">El lugar y la fecha</a>
+                                      </li>
+                                      <li class="navbar-brand mr-0 text-secondary">
+                                        <a class="nav-link active" href="#">Conviértete en orador</a>
+                                      </li>
+                                      <li class="navbar-brand mr-0">
+                                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                                      </li>
+                                </ul>
+                        </div>
+                  </nav>
+                </div>
+    </div>
+
+
+    <div class="container text-center" style="margin-top: 25px">
+    <div class="container-fluid ContendorOradores d-flex justify-content-center">
+      <div class="row col-8">
+        <div class="col-12 col-md-4 px-1">
+              <div class="card border-primary" style="width: auto">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <p class="card-text">Tiene un descuento</p>
+                  <h5 class="card-title">80%</h5>
+                  <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-md-4 px-1">
+            <div class="card-block">
+              <div class="card border-info" style="width: auto">
+                <div class="card-body">
+                  <h5 class="card-title">Trainee</h5>
+                  <p class="card-text">Tiene un descuento</p>
+                  <h5 class="card-title">50%</h5>
+                  <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-6 px-1">        
+              <div class="card border-warning" style="width: auto;">
+                <div class="card-body">
+                  <h5 class="card-title">Junior</h5>
+                  <p class="card-text">Tiene un descuento</p>
+                  <h5 class="card-title">15%</h5>
+                  <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
+  <div class="container col-md-12">
+    <div class="text-center">
+      <p>VENTA</p>
+      <h1>VALOR DE TICKET $200</h1>
+    </div>
+    <div class="Formulario col-md-8" style="top:20px">
+      <form id="myForm">
+        <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <input id="Nombre" type="text" class="form-control xs-mb-4" placeholder="Nombre" style="margin-bottom: 10px">
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <input id="Apellido" type="text" class="form-control" placeholder="Apellido" style="margin-bottom: 10px">
+              </div>
+              <div class="col-xs-12">
+                <input id="Correo" type="text" class="form-control" placeholder="Correo">
+              </div>
+              <div class="col-xs-12 col-md-6" style="margin-top: 10px">
+                <label for="">Cantidad</label>
+                <input id="Cantidad" type="text" class="form-control xs-mb-4" placeholder="Cantidad">
+              </div>
+              <div class="col-xs-12 col-md-6" style="margin-top: 10px">
+                <label for="">Categoria</label>
+                <select id="Categoria" class="form-select" aria-label="Default select example">
+                  <option selected>Elija la categoria</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+              <div class="col-xs-12" style="margin-top: 20px">
+                <input id="TotalaPagar" type="text" class="form-control" style="background-color:rgba(170, 240, 240, 0.904)" placeholder="Total a Pagar: $">
+              </div>
+
+              <div class="col-xs-12 col-md-6">
+                <button class="btnEnviar xs-mb-4" style="margin-top: 25px;padding: 7px; color: white;" onclick="borrarFormulario()">Borrar</button>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <button class="btnEnviar" style="margin-top: 25px;padding: 7px; color: white;" onclick="calcularPrecio()">Resumen</button>
+              </div>
+        </div>
+      </form>
+        
+    </div>
+  </div>
+  
+  <footer class="container-fluid" style="background-color: #1e3847; margin-top: 80px;padding: 15px;">
+  
+    <div class="row w-75 m-auto d-flex justify-content-between align-items-center">
+        <div class="col-md-1 text-center mt-4">
+            <a class="navbar-brand text-center text-white" href="#">Preguntas <span class="d-block text-center">frecuentes</span></a>
+        </div>
+        <div class="itemFooter col-md-1  text-center">
+            <a class="navbar-brand mr-0 text-white" href="#">Contáctanos</a>
+        </div>
+        <div class="itemFooter col-md-1 text-center">
+            <a class="navbar-brand mr-0 text-white" href="#">Prensa</a>
+        </div>
+        <div class="itemFooter col-md-1 text-center">
+            <a class="navbar-brand mr-0 text-white" href="#">Conferencia</a>            
+        </div>
+        <div class="col-md-1 text-center mt-4">
+            <a class=" navbar-brand text-center text-white" href="#">Términos y <span class="d-block text-center">condiciones</span></a>
+        </div>
+        <div class="itemFooter col-md-1 text-center">
+            <a class="navbar-brand mr-0 text-white" href="#">Privacidad</a>
+        </div>
+        <div class="itemFooter col-md-1 text-center">
+            <a class="navbar-brand mr-0 text-white" href="#">Estudiantes</a>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./JS/App.js"></script>
+</body>
+</html>
