@@ -122,6 +122,29 @@ textarea::-webkit-input-placeholder {
   font-size: 10px;
 }
 
+.title{
+  display: flex;
+  position: relative;
+  margin: auto;
+  width: 450px;
+  text-align: center;
+  top: 100px;
+}
+
+.texto{
+  display: flex;
+  position: relative;
+  top: 150px
+}
+
+.selectedItem:hover{
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 10;
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8097,6 +8120,12 @@ fieldset:disabled .btn {
 
 .min-vh-100 {
   min-height: 100vh !important;
+}
+
+.spaceTop{
+  position: relative;
+  display: flex;
+  margin-top: 100px;
 }
 
 .flex-fill {

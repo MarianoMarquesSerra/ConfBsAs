@@ -9,46 +9,46 @@
     <title>ConfBsAs</title>
 </head>
 <body>
-    <div class="container-fluid bg-dark">
-        <!-- BARRA NAVEGACIÓN -->
-              <div class="bg-dark">
-                  <nav class="navbar navbar-expand-md navbar-dark bg-dark border-3 border-bottom border-dark">
-                        <div class="container-fluid">
-                          <div class="ContenedorLogo">
-                            <div>
-                                <img class="img-fluid Logo" src="./Images/codoacodo.png" alt="ImagenCodoaCodo" style="width: 100px;">
-                            </div>
-                            <div>
-                                <h5 class="text-white mt-3">Conf Bs As</h5>
-                            </div>
-                          </div>  
-                            <button type="button" class="MenuNavegacion navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-expanded="false">
-                                    <span class="navbar-toggler-icon"></span>
-                            </button>
+  <div class="container-fluid bg-dark">
+    <!-- BARRA NAVEGACIÓN -->
+          <div class="bg-dark">
+              <nav class="navbar navbar-expand-md navbar-dark bg-dark border-3 border-bottom border-dark">
+                    <div class="container-fluid">
+                      <div class="ContenedorLogo">
+                        <div>
+                            <img class="img-fluid Logo" src="./Images/codoacodo.png" alt="ImagenCodoaCodo" style="width: 100px;">
                         </div>
-      
-                        <div id="MenuNavegacion" class="navbar-collapse collapse">
-                                <ul class="navbar-nav ms-3">
-                                      <li class="navbar-brand mr-0 text-secondary">
-                                          <a class="nav-link active" href="#">La conferencia</a>
-                                      </li>
-                                      <li class="navbar-brand mr-0 text-secondary">
-                                          <a class="nav-link" href="#">Los oradores</a>
-                                      </li>
-                                      <li class="navbar-brand mr-0 text-secondary">
-                                          <a class="nav-link" href="#">El lugar y la fecha</a>
-                                      </li>
-                                      <li class="navbar-brand mr-0 text-secondary">
-                                        <a class="nav-link" href="#">Conviértete en orador</a>
-                                      </li>
-                                      <li class="navbar-brand mr-0">
-                                        <a class="nav-link text-success" href="./Tickets.html">Comprar tickets</a>
-                                      </li>
-                                </ul>
+                        <div>
+                            <h5 class="text-white mt-3">Conf Bs As</h5>
                         </div>
-                  </nav>
-                </div>
-    </div>
+                      </div>  
+                        <button type="button" class="MenuNavegacion navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-expanded="false">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+  
+                    <div id="MenuNavegacion" class="navbar-collapse collapse">
+                            <ul class="navbar-nav ms-3">
+                                  <li class="navbar-brand mr-0 text-secondary">
+                                      <a class="nav-link active" href="#">La conferencia</a>
+                                  </li>
+                                  <li class="navbar-brand mr-0 text-secondary">
+                                      <a class="nav-link" href="#OradoresID">Los oradores</a>
+                                  </li>
+                                  <li class="navbar-brand mr-0 text-secondary">
+                                      <a class="nav-link" href="./LugaryFecha.html">El lugar y la fecha</a>
+                                  </li>
+                                  <li class="navbar-brand mr-0 text-secondary">
+                                    <a class="nav-link" href="#">Conviértete en orador</a>
+                                  </li>
+                                  <li class="navbar-brand mr-0">
+                                    <a class="nav-link text-success" href="./Tickets.html">Comprar tickets</a>
+                                  </li>
+                            </ul>
+                    </div>
+              </nav>
+            </div>
+</div>
 
 
 
@@ -70,7 +70,7 @@
                       <div class="row d-flex justify-content-end">
                           <div class="col-12 text-end">
                               <button type="button" class="btn btn-sm btn-outline-light me-1">Quiero ser orador</button>
-                              <button type="button" class="btn btn-sm btn-success ms-1">Comprar tickets!</button>
+                              <a type="button" class="btn btn-sm btn-success ms-1" href="./Tickets.html">Comprar tickets!</a>
                           </div>
                       </div>
                   </div>
@@ -90,7 +90,7 @@
                       <div class="row d-flex justify-content-end">
                           <div class="col-12 text-end">
                               <button type="button" class="btn btn-sm btn-outline-light me-1">Quiero ser orador</button>
-                              <button type="button" class="btn btn-sm btn-success ms-1">Comprar tickets!</button>
+                              <a  class="btn btn-sm btn-success ms-1" href="./Tickets.html">Comprar tickets!</a>
                           </div>
                       </div>
                   </div>
@@ -122,43 +122,37 @@
      
 
 
-  <div class="text-center Oradores">
+  <div class="text-center Oradores" id="OradoresID">
     <p style="font-size: 9px;">CONOCE A LOS</p>
     <h4><b>ORADORES</b></h4>
   </div>
   <div class="container">
   <div class="container-fluid ContendorOradores d-flex justify-content-center">
     <div class="row">
-      <div class="col-12 col-md-4 px-1">
+      <div class="col-12 col-md-4 px-1 selectedItem">
             <div class="card" style="width: auto">
               <img src="./Images/Mark Zuckerberg.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <a href="#" class="btn btn-sm btn-warning py-1">Javascript</a>
-                  <a href="#" class="btn btn-sm btn-primary py-1">React</a>
                   <h5 class="card-title">Mark Zuckerberg</h5>
                   <p class="card-text">Mark Elliot Zuckerberg es un programador y empresario estadounidense, uno de los creadores y fundadores de Facebook y la red social homónima, y su actual presidente.</p>
               </div>
             </div>
       </div>
-      <div class="col-12 col-md-4 px-1">
+      <div class="col-12 col-md-4 px-1 selectedItem">
           <div class="card-block">
             <div class="card" style="width: auto">
               <img src="./Images/Jack Dorsey.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <a href="#" class="btn btn-sm btn-warning py-1">Javascript</a>
-                  <a href="#" class="btn btn-sm btn-primary py-1">React</a>
                   <h5 class="card-title">Jack Dorsey</h5>
                   <p class="card-text">Jack Patrick Dorsey es un desarrollador de software y empresario estadounidense. Se le conoce por ser uno de los cofundadores de Twitter, así como el fundador y director ejecutivo de Square, una empresa de pagos mediante teléfonos móviles.</p>
               </div>
             </div>
           </div>
       </div>
-      <div class="col-md-4 col-xs-6 px-1">        
+      <div class="col-md-4 col-xs-6 px-1 selectedItem">        
             <div class="card" style="width: auto;">
               <img src="./Images/Kevin Systrom.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                  <a href="#" class="btn btn-sm btn-secondary py-1">Negocios</a>
-                  <a href="#" class="btn btn-sm btn-danger py-1">Startups</a>
                   <h5 class="card-title">Kevin Systrom</h5>
                   <p class="card-text">Kevin Systrom es un empresario y programador estadounidense, más conocido por ser el cofundador de Instagram junto a Mike Krieger.​</p>
               </div>
